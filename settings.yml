@@ -1,0 +1,162 @@
+LUT:
+  size: 33
+  algorithm: "Root-Polynomial" # "Root-Polynomial" | "Linear Matrix"
+  gamma: "ALEXA Log C"
+  output_file: "LUT.cube"
+
+files:
+  - file:
+      type: "Source" # "Source" or "Target" camera
+      path: 'E:\TEMP Camera Calibration\Sony SLog2\C0004.MP4' # Path to video file. On Windows use single quotes
+      gamma: "S-Log2"
+      start_frame: 273
+      fps: 25
+      samples:
+        batch: 1 # Batch Number: Useful for matching between different exposure ranges.
+        type: "Grayscale" # Type of sample: "Colour" | "Grayscale"
+        quantity: 99 # Number of patches
+        interval: 500 # Milliseconds between patches
+        csv: "sony_movie_1_grayscale.csv" # File to save patch values
+
+  - file:
+      type: "Target"
+      path: 'E:\TEMP Camera Calibration\BMPCC4K\A002_07121023_C004.mp4'
+      gamma: "ALEXA Log C"
+      start_frame: 106
+      fps: 10
+      samples:
+        batch: 1
+        type: "Grayscale"
+        quantity: 99
+        interval: 500
+        csv: "bmpcc_1_grayscale.csv"
+
+  - file:
+      type: "Source"
+      path: 'E:\TEMP Camera Calibration\Sony SLog2\C0005.MP4'
+      gamma: "S-Log2"
+      start_frame: 212
+      fps: 25
+      samples:
+        batch: 1
+        type: "Colour"
+        quantity: 4096
+        interval: 500
+        csv: "sony_movie_1_colour.csv"
+
+  - file:
+      type: "Target"
+      path: 'E:\TEMP Camera Calibration\BMPCC4K\A002_07121024_C005.mp4'
+      gamma: "ALEXA Log C"
+      start_frame: 104
+      fps: 10
+      samples:
+        batch: 1
+        type: "Colour"
+        quantity: 4096
+        interval: 500
+        csv: "bmpcc_1_colour.csv"
+
+  - file:
+      type: "Source"
+      path: 'E:\TEMP Camera Calibration\Sony SLog2\C0006.MP4'
+      gamma: "S-Log2"
+      start_frame: 291
+      fps: 25
+      samples:
+        batch: 2
+        type: "Grayscale"
+        quantity: 99
+        interval: 500
+        csv: "sony_movie_2_grayscale.csv"
+
+  - file:
+      type: "Target"
+      path: 'E:\TEMP Camera Calibration\BMPCC4K\A002_07121059_C006.mp4'
+      gamma: "ALEXA Log C"
+      start_frame: 111
+      fps: 10
+      samples:
+        batch: 2
+        type: "Grayscale"
+        quantity: 99
+        interval: 500
+        csv: "bmpcc_2_grayscale.csv"
+
+  - file:
+      type: "Source"
+      path: 'E:\TEMP Camera Calibration\Sony SLog2\C0007.MP4'
+      gamma: "S-Log2"
+      start_frame: 300
+      fps: 25
+      samples:
+        batch: 2
+        type: "Colour"
+        quantity: 4096
+        interval: 500
+        csv: "sony_movie_2_colour.csv"
+
+  - file:
+      type: "Target"
+      path: 'E:\TEMP Camera Calibration\BMPCC4K\A002_07121100_C007.mp4'
+      gamma: "ALEXA Log C"
+      start_frame: 115
+      fps: 10
+      samples:
+        batch: 2
+        type: "Colour"
+        quantity: 4096
+        interval: 500
+        csv: "bmpcc_2_colour.csv"
+
+  - file:
+      type: "Source"
+      path: 'E:\TEMP Camera Calibration\Sony SLog2\C0008.MP4'
+      gamma: "S-Log2"
+      start_frame: 250
+      fps: 25
+      samples:
+        batch: 3
+        type: "Grayscale"
+        quantity: 99
+        interval: 500
+        csv: "sony_movie_3_grayscale.csv"
+
+  - file:
+      type: "Target"
+      path: 'E:\TEMP Camera Calibration\BMPCC4K\A003_07121224_C008.mp4'
+      gamma: "ALEXA Log C"
+      start_frame: 96
+      fps: 10
+      samples:
+        batch: 3
+        type: "Grayscale"
+        quantity: 99
+        interval: 500
+        csv: "bmpcc_3_grayscale.csv"
+
+  - file:
+      type: "Source"
+      path: 'E:\TEMP Camera Calibration\Sony SLog2\C0009.MP4'
+      gamma: "S-Log2"
+      start_frame: 241
+      fps: 25
+      samples:
+        batch: 3
+        type: "Colour"
+        quantity: 4096
+        interval: 500
+        csv: "sony_movie_3_colour.csv"
+
+  - file:
+      type: "Target"
+      path: 'E:\TEMP Camera Calibration\BMPCC4K\A003_07121226_C009.mp4'
+      gamma: "ALEXA Log C"
+      start_frame: 97
+      fps: 10
+      samples:
+        batch: 3
+        type: "Colour"
+        quantity: 4096
+        interval: 500
+        csv: "bmpcc_3_colour.csv"

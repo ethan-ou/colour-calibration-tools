@@ -1,0 +1,8 @@
+ffmpeg-python
+numpy
+scipy
+matplotlib
+colour-science
+ruamel.yaml
+cerberus
+tqdm
